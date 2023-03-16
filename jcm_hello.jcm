@@ -14,14 +14,6 @@
 
 mas jcm_hello {
 
-    agent bob: sample_agent.asl {
-      focus: w.c1 
-    }
-
-    workspace w {
-      artifact c1: example.Counter(3) 
-    }
-
-    
+    agent bob: sample_agent.asl    
 
 }
