@@ -49,7 +49,7 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 ```
 
 
-./gradlew buildJCMDeps./gradlew buildJCMDeps
+
 
 ```sh
 ./gradlew buildJCMDeps
