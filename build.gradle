@@ -1,17 +1,10 @@
-/*
-   Project jcm_hello
-
-   Gradle build file for JaCaMo Applications
-   March 16, 2023 - 16:17:34
-*/
-
 defaultTasks 'run'
 
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 version '1.0'
-group = 'com.github.jomifred'
+group = 'com.github.chon-group'
 
 java {
     toolchain {
@@ -28,7 +21,15 @@ repositories {
 }
 
 dependencies {
-    implementation('org.jacamo:jacamo:1.2-SNAPSHOT') 
+    implementation('org.jacamo:jacamo:1.2-SNAPSHOT')
+    implementation('com.squareup.okhttp3:okhttp:3.9.0')
+    implementation('org.apache.httpcomponents:httpcore:4.4.15')
+    implementation('net.i2p.crypto:eddsa:0.3.0')
+    implementation('com.google.api-client:google-api-client:1.23.0')
+    implementation('org.glassfish.tyrus.bundles:tyrus-standalone-client:1.9')
+    implementation('org.bouncycastle:bcprov-jdk15on:1.70')
+    implementation('org.json:json:20220924')
+    implementation('org.bitcoinj:bitcoinj-core:0.16.2')
 }
 
 sourceSets {
@@ -53,7 +54,7 @@ task run (type: JavaExec, dependsOn: 'classes') {
         mkdir 'log'
     }
     mainClass = 'jacamo.infra.JaCaMoLauncher'
-    args 'jcm_hello.jcm'
+    args 'velluscinum.jcm'
     // jvmArgs '-Xss15m'
     classpath sourceSets.main.runtimeClasspath
 }

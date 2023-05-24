@@ -12,7 +12,7 @@
     March 16, 2023 - 16:17:34
 */
 
-mas jcm_hello {
+mas velluscinum {
 
     agent bob: sample_agent.asl    
 
