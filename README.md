@@ -19,17 +19,15 @@ nilson@pc:~$
 ```
 
 ### Configuring Project
-Edit  ___yourMultiAgentSystem.jcm___ adding velluscinum JaCaMo package.
-```sh
+Edit  the project file __hello-vellus/hello_vellus.jcm__
+```
 mas vellus_hello {
-
     agent bob: sample_agent.asl
-    
     uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-beta"
 }
 ```
 
-Edit /home/nilson/vellus_hello/src/agt/sample_agent.asl
+Edit the agent file __hello-vellus/src/agt/sample_agent.asl__
 ```sh
 /* Initial beliefs and rules */
 bigchainDB("http://testchain.chon.group:9984/").
@@ -69,38 +67,35 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 	.stopMAS.
 ```
 
-
-
 ### Importing Deps
 ```sh
-nilson@pc:~$ cd /home/nilson/vellus_hello/
-nilson@pc:~/vellus_hello$ ./gradlew buildJCMDeps
+nilson@pc:~$ cd hello-vellus/
+nilson@pc:~/hello-vellus$ ./gradlew buildJCMDeps
 
 > Task :buildJCMDeps
-reading from file vellus_hello.jcm ...
-file vellus_hello.jcm parsed successfully!
-
+reading from file hello_vellus.jcm ...  file hello_vellus.jcm parsed successfully!
 JCM packages dependencies updated at .jcm-deps.gradle
 
-BUILD SUCCESSFUL in 5s
-2 actionable tasks: 2 executed
-nilson@pc:~/vellus_hello$
+nilson@pc:~/hello-vellus$
 ``` 
 
 ### Run
 ```sh
-nilson@pc:~/vellus_hello$ ./gradlew build
+nilson@pc:~/hello-vellus$ ./gradlew run --console=plain
 
 > Task :testJaCaMo
 Runtime Services (RTS) is running at 192.168.0.111:39417
 Agent mind inspector is running at http://192.168.0.111:3272
 CArtAgO Http Server running on http://192.168.0.111:3273
+[bob] Creating a Wallet
 [Velluscinum] Build Wallet... 5QRxjJo17PKge5wbCV8kbEMAU7ouMTEKPrSPkEoN1bF8
+[bob] Creating a NFT
 [Velluscinum] Creating Asset... 8cb6a30fc1e5f64b2cd1d2b0c30f54bb138065fb82db08b9f5ad83bf8bf4357a [pushed][successfully]
+[bob] NFT registred: http://testchain.chon.group:9984:/api/v1/transactions/8cb6a30fc1e5f64b2cd1d2b0c30f54bb138065fb82db08b9f5ad83bf8bf4357a
 [Velluscinum] Transfer Asset... b6d955762d71f61858cb6eaf2cc9d16252ef635a9c93b7461aff66ee69e6ae81 [pushed][successfully]
+[bob] NFT transferred: http://testchain.chon.group:9984:/api/v1/transactions/b6d955762d71f61858cb6eaf2cc9d16252ef635a9c93b7461aff66ee69e6ae81
 
 BUILD SUCCESSFUL in 7s
 3 actionable tasks: 2 executed, 1 up-to-date
-nilson@pc:~/vellus_hello$ 
-
+nilson@pc:~/hello-vellus$ 
 ```
