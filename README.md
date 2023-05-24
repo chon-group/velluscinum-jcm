@@ -95,8 +95,36 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 
 
 
-
+### Importing Deps
 ```sh
-./gradlew buildJCMDeps
-./gradlew run
+nilson@pc:~$ cd /home/nilson/vellus_hello/
+nilson@pc:~/vellus_hello$ ./gradlew buildJCMDeps
+
+> Task :buildJCMDeps
+reading from file vellus_hello.jcm ...
+file vellus_hello.jcm parsed successfully!
+
+JCM packages dependencies updated at .jcm-deps.gradle
+
+BUILD SUCCESSFUL in 5s
+2 actionable tasks: 2 executed
+nilson@pc:~/vellus_hello$
 ``` 
+
+### Run
+```sh
+nilson@pc:~/vellus_hello$ ./gradlew build
+
+> Task :testJaCaMo
+Runtime Services (RTS) is running at 192.168.0.111:39417
+Agent mind inspector is running at http://192.168.0.111:3272
+CArtAgO Http Server running on http://192.168.0.111:3273
+[Velluscinum] Build Wallet... 5QRxjJo17PKge5wbCV8kbEMAU7ouMTEKPrSPkEoN1bF8
+[Velluscinum] Creating Asset... 8cb6a30fc1e5f64b2cd1d2b0c30f54bb138065fb82db08b9f5ad83bf8bf4357a [pushed][successfully]
+[Velluscinum] Transfer Asset... b6d955762d71f61858cb6eaf2cc9d16252ef635a9c93b7461aff66ee69e6ae81 [pushed][successfully]
+
+BUILD SUCCESSFUL in 7s
+3 actionable tasks: 2 executed, 1 up-to-date
+nilson@pc:~/vellus_hello$ 
+
+```
