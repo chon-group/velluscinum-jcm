@@ -1,48 +1,24 @@
 # velluscinum-jcm
 [![](https://jitpack.io/v/chon-group/velluscinum-jcm.svg)](https://jitpack.io/#chon-group/velluscinum-jcm)
 
-### Download JaCaMo
+### Creating a JaCaMo Project
 ```sh
 nilson@pc:~$ wget -q http://jacamo-lang.github.io/jacamo/nps/np1.2.zip
-nilson@pc:~$ unzip np1.2.zip 
-Archive:  np1.2.zip
-  inflating: build.gradle            
-  inflating: create.sh               
-   creating: gradle/
-   creating: gradle/wrapper/
-  inflating: gradle/wrapper/gradle-wrapper.jar  
-  inflating: gradle/wrapper/gradle-wrapper.properties  
-  inflating: gradlew                 
-  inflating: gradlew.bat 
-```
-### Creating Project
-
-```sh
-nilson@pc:~$ ./gradlew --console=plain
-> Task :compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
-> Task :classes UP-TO-DATE
+nilson@pc:~$ unzip -qq np1.2.zip 
+nilson@pc:~$ ./gradlew -Dexec.args="hello-vellus --console"
 
 > Task :run
-JaCaMo 1.2 built on Tue May 23 17:03:04 CEST 2023
-
-
-Enter the identification of the new application: vellus_hello      
-Creating JaCaMo application vellus_hello
-Creating path /home/nilson/vellus_hello
+Creating JaCaMo application hello-vellus
+Creating path /home/nilson/hello-vellus
 
 You can run your application with:
-   cd /home/nilson/vellus_hello
+   cd /home/nilson/hello-vellus
    ./gradlew -q --console=plain
-
-or (if you have JaCaMo CLI installed)
-   jacamo /home/nilson/vellus_hello/vellus_hello.jcm
-
-BUILD SUCCESSFUL in 1m 21s
-1 actionable task: 1 executed
+   
 nilson@pc:~$ 
 ```
 
+### Configuring Project
 Edit  ___yourMultiAgentSystem.jcm___ adding velluscinum JaCaMo package.
 ```sh
 mas vellus_hello {
