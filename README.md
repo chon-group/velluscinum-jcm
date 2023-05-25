@@ -1,6 +1,8 @@
 # velluscinum-jcm
 [![](https://jitpack.io/v/chon-group/velluscinum-jcm.svg)](https://jitpack.io/#chon-group/velluscinum-jcm)
 
+Dependencies Java >= 17
+
 ### Creating a JaCaMo Project
 ```sh
 nilson@pc:~$ wget -q http://jacamo-lang.github.io/jacamo/nps/np1.2.zip
@@ -83,7 +85,7 @@ nilson@pc:~/hello-vellus$
 ```sh
 nilson@pc:~/hello-vellus$ ./gradlew run --console=plain
 
-> Task :testJaCaMo
+> Task :run
 Runtime Services (RTS) is running at 192.168.0.111:39417
 Agent mind inspector is running at http://192.168.0.111:3272
 CArtAgO Http Server running on http://192.168.0.111:3273
