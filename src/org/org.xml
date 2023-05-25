@@ -3,7 +3,7 @@
 <?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
 
 <organisational-specification
-    id="jcm_hello"
+    id="velluscinum"
     os-version="0.8"
 
     xmlns='http://moise.sourceforge.net/os'

@@ -22,7 +22,8 @@ repositories {
 
 dependencies {
     implementation('org.jacamo:jacamo:1.2-SNAPSHOT')
-    implementation('com.squareup.okhttp3:okhttp:3.9.0')
+    
+/*    implementation('com.squareup.okhttp3:okhttp:3.9.0')
     implementation('org.apache.httpcomponents:httpcore:4.4.15')
     implementation('net.i2p.crypto:eddsa:0.3.0')
     implementation('com.google.api-client:google-api-client:1.23.0')
@@ -30,6 +31,8 @@ dependencies {
     implementation('org.bouncycastle:bcprov-jdk15on:1.70')
     implementation('org.json:json:20220924')
     implementation('org.bitcoinj:bitcoinj-core:0.16.2')
+*/
+    implementation('com.github.chon-group:velluscinum:0.2-beta')
 }
 
 sourceSets {
