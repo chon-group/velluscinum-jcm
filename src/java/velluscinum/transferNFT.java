@@ -1,7 +1,7 @@
-package jason.stdlib;
+package velluscinum;
 
 import group.chon.velluscinum.Api;
-import group.chon.velluscinum.JasonUtil;
+import velluscinum.util.JasonUtil;
 import jason.asSemantics.DefaultInternalAction;
 import jason.asSemantics.Message;
 import jason.asSemantics.TransitionSystem;

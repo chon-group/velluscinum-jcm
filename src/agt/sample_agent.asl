@@ -9,12 +9,12 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 /* Plans */
 +!start <-
 	.print("Creating a Wallet");
-	.buildWallet(myWallet);
+	velluscinum.buildWallet(myWallet);
 	.wait(myWallet(PrivateKey,PublicKey));
 	
 	.print("Creating a NFT");
 	?bigchainDB(Server);
-	.deployNFT(Server,
+	velluscinum.deployNFT(Server,
 			PrivateKey,PublicKey,
 			"name:Meninas;author:Silva y Velázquez;place:Madrid;year:1656",
 			"location:Madrid;value_eur:25000000;owner:Bob Agent",
@@ -25,7 +25,7 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 
 	.print("Tranfering the NFT");
 	?aliceKey(AliceKey);
-	.transferNFT(Server,
+	velluscinum.transferNFT(Server,
 				PrivateKey,PublicKey,
 				AssetID,
 				AliceKey,
