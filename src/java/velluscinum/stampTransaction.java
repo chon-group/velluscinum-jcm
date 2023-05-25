@@ -1,7 +1,7 @@
-package jason.stdlib;
+package velluscinum;
 
 import group.chon.velluscinum.Api;
-import group.chon.velluscinum.JasonUtil;
+import velluscinum.util.JasonUtil;
 import jason.asSemantics.DefaultInternalAction;
 import jason.asSemantics.Message;
 import jason.asSemantics.TransitionSystem;
@@ -10,44 +10,40 @@ import jason.asSyntax.Literal;
 import jason.asSyntax.Term;
 
 /**
- *  .transferToken(Server,Prk,Puk,MyCoin,BobKey,50,transferBelief).
+ *  .lockTransaction(Server,PrK,PuB,Transaction);
  */
-public class transferToken extends DefaultInternalAction {
+public class stampTransaction extends DefaultInternalAction {
     @Override
     public Object execute(TransitionSystem ts, Unifier un, Term[] args) throws Exception {
         JasonUtil util = new JasonUtil();
         Api api = new Api();
-        if(args.length==7||args.length==6){
+        if(args.length==4 || args.length ==5){
             String[] arrayArgs = util.toArray(args);
-            Integer amount = Integer.parseInt(arrayArgs[5]);
             while (util.isLocked());
             util.lock(true);
-            String transferTokenID = api.transfer(
+            String result = api.stampTransaction(
                     arrayArgs[0],
                     arrayArgs[1],
                     arrayArgs[2],
-                    arrayArgs[3],
-                    arrayArgs[4],
-                    amount
+                    arrayArgs[3]
             );
             util.lock(false);
-            if(transferTokenID!=null){
-                if(args.length==7){
+            if(result!=null) {
+                if (args.length == 4) {
+                    return true;
+                } else if (args.length == 5) {
                     Message m = new Message("tell",
                             ts.getAgArch().getAgName(),
                             ts.getAgArch().getAgName(),
-                            Literal.parseLiteral(util.newBelief(arrayArgs[args.length-1],transferTokenID )));
-                            //Literal.parseLiteral(util.newBelief(arrayArgs[args.length-1],transferTokenID ));
+                            Literal.parseLiteral(util.newBelief(arrayArgs[args.length-1],result )));
                     ts.getAgArch().sendMsg(m);
+                    return true;
                 }
-                return true;
-            }else{
-                return false;
             }
+            return true;
         }else{
             ts.getAg().getLogger().info("Input error");
             return false;
         }
-        }
-
     }
+}

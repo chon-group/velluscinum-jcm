@@ -1,7 +1,7 @@
-package group.chon.velluscinum;
+package velluscinum.util;
+
 import jason.asSyntax.Literal;
 import jason.asSyntax.Term;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Random;

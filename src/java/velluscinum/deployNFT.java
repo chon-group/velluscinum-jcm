@@ -1,8 +1,8 @@
-package jason.stdlib;
+package velluscinum;
 
 import group.chon.velluscinum.Api;
 import group.chon.velluscinum.Asset;
-import group.chon.velluscinum.JasonUtil;
+import velluscinum.util.JasonUtil;
 import jason.asSemantics.DefaultInternalAction;
 import jason.asSemantics.Message;
 import jason.asSemantics.TransitionSystem;
@@ -11,26 +11,32 @@ import jason.asSyntax.Literal;
 import jason.asSyntax.Term;
 
 /**
- * .buildToken(Server,PrK,PuK,"cryptocurrency:ChainChon",200,coinBelief);
+ * 	.deployNFT(Server,MyPriv,MyPub,"asset:data","asset:metadata",nftBelief);
  */
-public class deployToken extends DefaultInternalAction {
+public class deployNFT extends DefaultInternalAction {
     @Override
     public Object execute(TransitionSystem ts, Unifier un, Term[] args) throws Exception {
         JasonUtil util = new JasonUtil();
         Api api = new Api();
+        String[] arrayArgs = util.toArray(args);
+
         if(args.length==6){
-            String[] arrayArgs = util.toArray(args);
-            Long amount = Long.parseLong(arrayArgs[4]);
             while (util.isLocked());
             util.lock(true);
-            String tokenID = api.deploy(arrayArgs[0],arrayArgs[1],arrayArgs[2],arrayArgs[3],amount);
+            String assetID = api.deploy(
+                    arrayArgs[0].toString(),
+                    arrayArgs[1].toString(),
+                    arrayArgs[2].toString(),
+                    arrayArgs[3].toString(),
+                    arrayArgs[4].toString()
+            );
             util.lock(false);
-            if(tokenID!=null){
+            if(assetID!=null){
                 Message m = new Message("tell",
                         ts.getAgArch().getAgName(),
                         ts.getAgArch().getAgName(),
-                        Literal.parseLiteral(util.newBelief(arrayArgs[args.length-1],tokenID )));
-                        //Literal.parseLiteral(arrayArgs[args.length-1]+"(\""+tokenID+"\")"));
+                        Literal.parseLiteral(util.newBelief(arrayArgs[args.length-1],assetID )));
+                        //Literal.parseLiteral(arrayArgs[args.length-1]+"(\""+assetID+"\")"));
                 ts.getAgArch().sendMsg(m);
                 return true;
             }else{
@@ -40,6 +46,5 @@ public class deployToken extends DefaultInternalAction {
             ts.getAg().getLogger().info("Input error");
             return false;
         }
-        }
-
     }
+}

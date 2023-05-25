@@ -1,12 +1,14 @@
-package jason.stdlib;
+package velluscinum;
 
 import group.chon.velluscinum.Api;
-import group.chon.velluscinum.JasonUtil;
 import group.chon.velluscinum.WalletContent;
-import jason.asSemantics.*;
+import velluscinum.util.JasonUtil;
+import jason.asSemantics.DefaultInternalAction;
+import jason.asSemantics.Message;
+import jason.asSemantics.TransitionSystem;
+import jason.asSemantics.Unifier;
 import jason.asSyntax.Literal;
 import jason.asSyntax.Term;
-
 import java.util.ArrayList;
 
 /**
