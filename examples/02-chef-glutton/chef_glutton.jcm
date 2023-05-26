@@ -14,14 +14,9 @@
 
 mas chef_glutton {
 
-    agent bob: sample_agent.asl {
-      focus: w.c1 
-    }
+        agent chef
+	    agent glutton
+        agent bank
 
-    workspace w {
-      artifact c1: example.Counter(3) 
-    }
-
-    
-
+        uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
 }
