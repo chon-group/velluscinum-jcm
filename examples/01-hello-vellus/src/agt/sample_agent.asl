@@ -20,9 +20,9 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 			myNFT);
 
 	.wait(myNFT(AssetID));
-	.print("NFT registered: ",Server,"api/v1/transactions/",AssetID);
+	.print("The NFT is registered at: ",Server,"api/v1/transactions/",AssetID);
 
-	.print("Tranfering the NFT");
+	.print("Transfering the NFT");
 	?aliceKey(AliceKey);
 	velluscinum.transferNFT(Server,
 				PrivateKey,PublicKey,
