@@ -31,7 +31,7 @@ Where:
 - I is a key-value array that represents the immutable data of an asset;
 - M is a key-value array representing asset or transaction metadata;
 
-## Who to use
+## How to use
 Import the package in your .JCM project file
 ```
 mas yourJaCaMoProject {
@@ -40,4 +40,8 @@ mas yourJaCaMoProject {
 }
 ```
 ## Examples
-... to do
++   Hello Vellus
++   The Chef and the Glutton
++   Domestic Robot
++   Building a House
+
