@@ -42,6 +42,5 @@ mas yourJaCaMoProject {
 ## Examples
 +   [Hello Vellus](https://github.com/chon-group/velluscinum-jcm/tree/main/examples/01-hello-vellus)
 +   [The Chef and the Glutton](https://github.com/chon-group/velluscinum-jcm/tree/main/examples/02-chef-glutton)
-+   [Domestic Robot](https://github.com/chon-group/velluscinum-jcm/tree/main/examples/03-domestic-robot)
-+   [Building a House](https://github.com/chon-group/velluscinum-jcm/tree/main/examples/04-house-building)
++   [Building a House](https://github.com/chon-group/velluscinum-jcm/tree/main/examples/03-house-building)
 
