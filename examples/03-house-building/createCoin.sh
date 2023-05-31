@@ -1,7 +1,7 @@
 #! /bin/bash
 bigchaindbNODE="http://testchain.chon.group:9984"
-
 VELLUSCINUM_CLI="java -jar lib/velluscinum_0.2-beta.jar"
+
 echo "Preparing cryptocurrency to execute the example"
 echo "Using $bigchaindbNODE as Node in BigchainDB Network"
 echo " "
@@ -43,5 +43,5 @@ echo " "
 echo "Executing the house_building jacamo example"
 
 #Run gradle (see the run task on build.gradle file)
-./gradlew buildJCMDeps
-./gradlew run
+#./gradlew buildJCMDeps
+#./gradlew run
