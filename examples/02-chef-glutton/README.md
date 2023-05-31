@@ -24,3 +24,4 @@ JCM packages dependencies updated at .jcm-deps.gradle
 ```sh
 nilson@local2:~/velluscinum-jcm/examples/02-chef-glutton$ ./gradlew run
 ```
+![Captura de tela de 2023-05-31 11-25-07](https://github.com/chon-group/velluscinum-jcm/assets/32855001/e41f6d0e-b52e-4a21-9f7c-8a9dedac38f5)
