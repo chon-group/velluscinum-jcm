@@ -51,4 +51,5 @@ nilson@pc:~/velluscinum-jcm/examples/03-house-building$
 ```sh
 nilson@pc:~/velluscinum-jcm/examples/03-house-building$ ./gradlew run
 ```
-![Captura de tela de 2023-05-31 11-25-07](https://github.com/chon-group/velluscinum-jcm/assets/32855001/e41f6d0e-b52e-4a21-9f7c-8a9dedac38f5)
+![Captura de tela de 2023-05-31 11-52-56](https://github.com/chon-group/velluscinum-jcm/assets/32855001/5b3c789a-1e8f-4c47-8192-4e27277c36b6)
+
