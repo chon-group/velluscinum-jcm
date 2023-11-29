@@ -1,4 +1,5 @@
 ## The Chef and the Glutton
+To install JaCaMo-CLI on your computer, see the [APT Package for JaCaMo CLI](https://github.com/chon-group/dpkg-jacamo)
 
 ### Creating a JaCaMo Project
 ```sh
