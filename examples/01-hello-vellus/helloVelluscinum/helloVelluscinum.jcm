@@ -1,5 +1,5 @@
 /*
-    hello_vellus
+    helloVelluscinum
     ---------------------------
 
     JaCaMo Application File
@@ -9,13 +9,10 @@
     (see jacamo/doc/jcm.html for more information about what can be defined in this file)
 
     JaCaMo 1.2
-    maio 25, 2023 - 20:28:45
+    novembro 29, 2023 - 09:49:13
 */
 
-mas hello_vellus {
-   
-   agent bob: sample_agent.asl
-
-   uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
-   
+mas helloVelluscinum {
+    agent bob: sample_agent.asl
+    uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"    
 }

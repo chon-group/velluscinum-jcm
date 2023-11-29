@@ -1,3 +1,5 @@
+// Agent bob in project helloVelluscinum
+
 /* Initial beliefs and rules */
 bigchainDB("http://testchain.chon.group:9984/").
 aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
@@ -20,17 +22,17 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 			myNFT);
 
 	.wait(myNFT(AssetID));
-	.print("The NFT is registered at: ",Server,"api/v1/transactions/",AssetID);
+	.print("NFT registered: ",Server,"api/v1/transactions/",AssetID);
 
-	.print("Transfering the NFT");
+	.print("Tranfering the NFT");
 	?aliceKey(AliceKey);
 	velluscinum.transferNFT(Server,
-				PrivateKey,PublicKey,
-				AssetID,
-				AliceKey,
-				"value_eur:30000000;owner:Alice;location:Rio de Janeiro",
-				transactionTo(alice));
+			PrivateKey,PublicKey,
+			AssetID,
+			AliceKey,
+			"value_eur:30000000;owner:Alice;location:Rio de Janeiro",
+			transactionTo(alice));
 				
 	.wait(transactionTo(alice,TransferID));
 	.print("NFT transferred: ",Server,"api/v1/transactions/",TransferID);
-	.stopMAS.
+.

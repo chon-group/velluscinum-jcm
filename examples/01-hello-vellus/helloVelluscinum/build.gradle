@@ -1,8 +1,8 @@
 /*
-   Project hello_vellus
+   Project helloVelluscinum
 
    Gradle build file for JaCaMo Applications
-   maio 25, 2023 - 20:28:45
+   novembro 29, 2023 - 09:49:13
 */
 
 defaultTasks 'run'
@@ -60,14 +60,14 @@ task run (type: JavaExec, dependsOn: 'classes') {
         mkdir 'log'
     }
     mainClass = 'jacamo.infra.JaCaMoLauncher'
-    args 'hello_vellus.jcm'
+    args 'helloVelluscinum.jcm'
     // jvmArgs '-Xss15m'
     classpath sourceSets.main.runtimeClasspath
 }
 
 task buildJCMDeps (type: JavaExec, dependsOn: 'classes') {
     mainClass = 'jacamo.infra.RunJaCaMoProject'
-    args = ['hello_vellus.jcm', '--deps']
+    args = ['helloVelluscinum.jcm', '--deps']
     classpath sourceSets.main.runtimeClasspath
 }
 
@@ -106,7 +106,7 @@ task uberJar(type: Jar, dependsOn: 'classes') {
     manifest {
         attributes 'Main-Class': 'jacamo.infra.JaCaMoLauncher'
     }
-    archiveBaseName = 'jacamo-hello_vellus' // the name must start with jacamo so that jacamo...jar is found in the classpath
+    archiveBaseName = 'jacamo-helloVelluscinum' // the name must start with jacamo so that jacamo...jar is found in the classpath
     from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     from (project.projectDir.absolutePath) {
         include '**/*.asl'
@@ -123,8 +123,8 @@ task uberJar(type: Jar, dependsOn: 'classes') {
 
     doFirst {
         copy {
-            from 'hello_vellus.jcm'
-            rename 'hello_vellus.jcm','default.jcm'
+            from 'helloVelluscinum.jcm'
+            rename 'helloVelluscinum.jcm','default.jcm'
             into project.buildDir.absolutePath + '/jcm'
         }
     }
