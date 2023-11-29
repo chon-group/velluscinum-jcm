@@ -57,7 +57,7 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 
 ### Running JaCaMo
 ```sh
-nilson@pc:~/hello-vellus$ jacamo helloVelluscinum/helloVelluscinum.jcm
+jacamo helloVelluscinum/helloVelluscinum.jcm
 ```
 ![](.img/outputHelloVelluscinum.png)
 

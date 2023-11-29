@@ -1,5 +1,5 @@
 /*
-    chef_glutton
+    chefBankGlutton
     ---------------------------
 
     JaCaMo Application File
@@ -9,14 +9,14 @@
     (see jacamo/doc/jcm.html for more information about what can be defined in this file)
 
     JaCaMo 1.2
-    maio 25, 2023 - 20:39:35
+    novembro 29, 2023 - 10:40:13
 */
 
-mas chef_glutton {
+mas chefBankGlutton {
 
-        agent chef
-	    agent glutton
-        agent bank
+  agent chef
+  agent glutton
+  agent bank
 
-        uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
+  uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
 }

@@ -1,8 +1,8 @@
 /*
-   Project chef_glutton
+   Project chefBankGlutton
 
    Gradle build file for JaCaMo Applications
-   maio 25, 2023 - 20:39:35
+   novembro 29, 2023 - 10:40:13
 */
 
 defaultTasks 'run'
@@ -60,14 +60,14 @@ task run (type: JavaExec, dependsOn: 'classes') {
         mkdir 'log'
     }
     mainClass = 'jacamo.infra.JaCaMoLauncher'
-    args 'chef_glutton.jcm'
+    args 'chefBankGlutton.jcm'
     // jvmArgs '-Xss15m'
     classpath sourceSets.main.runtimeClasspath
 }
 
 task buildJCMDeps (type: JavaExec, dependsOn: 'classes') {
     mainClass = 'jacamo.infra.RunJaCaMoProject'
-    args = ['chef_glutton.jcm', '--deps']
+    args = ['chefBankGlutton.jcm', '--deps']
     classpath sourceSets.main.runtimeClasspath
 }
 
@@ -106,7 +106,7 @@ task uberJar(type: Jar, dependsOn: 'classes') {
     manifest {
         attributes 'Main-Class': 'jacamo.infra.JaCaMoLauncher'
     }
-    archiveBaseName = 'jacamo-chef_glutton' // the name must start with jacamo so that jacamo...jar is found in the classpath
+    archiveBaseName = 'jacamo-chefBankGlutton' // the name must start with jacamo so that jacamo...jar is found in the classpath
     from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     from (project.projectDir.absolutePath) {
         include '**/*.asl'
@@ -123,8 +123,8 @@ task uberJar(type: Jar, dependsOn: 'classes') {
 
     doFirst {
         copy {
-            from 'chef_glutton.jcm'
-            rename 'chef_glutton.jcm','default.jcm'
+            from 'chefBankGlutton.jcm'
+            rename 'chefBankGlutton.jcm','default.jcm'
             into project.buildDir.absolutePath + '/jcm'
         }
     }
