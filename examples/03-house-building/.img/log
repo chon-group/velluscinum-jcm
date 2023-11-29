@@ -1,0 +1,92 @@
+Runtime Services (RTS) is running at 127.0.1.1:39281
+Agent mind inspector is running at http://127.0.1.1:3272
+CArtAgO Http Server running on http://127.0.1.1:3273
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/nilson/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-nop/1.7.30/55d4c73dd343efebd236abfeb367c9ef41d55063/slf4j-nop-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+[Velluscinum] Creating Asset... fd16aa02ef9a8b5a520c857d2db777a3b8a672cfdca3556a82039e15a6289a86 [pushed][successfully]
+[Velluscinum] Creating Asset... e1dd87ccaa7c48e4d7ee942614d32e018dcf7a48288ec9af3aabf1705a3124c9 [pushed][successfully]
+[Velluscinum] Creating Asset... d704e3bb377609b08b3f7173843ec116d08b7b568fdd308baab721bee7647146 [pushed][successfully]
+[Velluscinum] Creating Asset... b7d88b4b8851a862b03bae4d4155abb496ecb1fe585ce95865ddf732b07dbfe3 [pushed][successfully]
+[Velluscinum] Creating Asset... 1f0f805348f2a7c7a1eec69e7f3ecf15a30ceb2d7f34aa01936f05fea1444a18 [pushed][successfully]
+[Velluscinum] Creating Asset... 736067ec66f6fae5e5568e0188fc1c24db0eb430bc1f5c1181aa0e1ba7d1c2c2 [pushed][successfully]
+[Velluscinum] Creating Asset... e796f6ec3e1ad242b43b19c12bab8ab27ce9f3ae4d6cfe3ac44ad8f667acabac [pushed][successfully]
+[Velluscinum] Creating Asset... 4f4689d7d60054e22786d3efecd81d575f4fe17438e6e6aa53239fbc593d1e48 [pushed][successfully]
+Waiting bids for 5 seconds...
+Winner of task Painting is companyC5 for 1100
+Winner of task ElectricalSystem is companyC5[Velluscinum] Build Wallet... BPNfCJCQj756FXm2JhmnkispsvQV1X2NbpouPhfFswTV
+ for 300
+[Velluscinum] Transfer Asset... d7be03d29140097f26c26600a31ceeddaa598fa0947e50c8892f9fd45cc08f6a [pushed][successfully]
+Winner of task Plumbing is companyA for 300
+[Velluscinum] Transfer Asset... de5daacb356002988668d2bbeef19204a062aeb532f9c78e0faed024169097bd [pushed][successfully]
+Winner of task WindowsDoors is companyD11 for 1316
+[Velluscinum] Build Wallet... C6AmXTHPHQuqHTYMKj6KWujY1SFFQzhQKxS7JVz3x8qV
+[Velluscinum] Transfer Asset... 29220bea92130b9908c9dd1f5be5e723c27b7321f437a46f23e4c893efa75802 [pushed][successfully]
+Winner of task Roof is companyE[Velluscinum] Build Wallet... F48faixerSXWxsq5ATDiCBPGPAiH9yHmTfvD2VCxDMw3
+ for 1090
+[Velluscinum] Transfer Asset... 9f046d86bdf2205cd032ada0b9815280f0b3bf5b778335363ed7ea579469921a [pushed][successfully]
+Winner of task [Velluscinum] Build Wallet... 3BGz5JPnyFWbTVieP9uM43HtPEnxLH5Wmhq9eNr3aCXb
+Walls is companyE for 890
+[Velluscinum] Transfer Asset... 28a7113f7e8ee7c84a1d2b5325e230445e7ba30e93757f3f7fdaca93fa28d50b [pushed][successfully]
+Winner of task Floors is companyE for 890
+[Velluscinum] Transfer Asset... 9e6efe5e903661442ae51ee9de03824049948d2d1edfdc9a920aacab96741036 [pushed][successfully]
+Winner of task SitePreparation is companyB for 1750
+[Velluscinum] Transfer Asset... a5c500429a78d2ef1b7564d5d2151c2b5894aecb944b77d56b7fc55e52acafe3 [pushed][successfully]
+
+*** Execution Phase ***
+[Velluscinum] Build Wallet... 36TyDUVnomqV4zQPCkhGAM8cnxBeZ8s3FREu3MAv2bF5
+
+[Velluscinum] Transfer Asset... 2ec767154f71027872275ce3fa0d2f49213e6cdc91efb497fd13c1ff0d079b38 [pushed][successfully]
+Moise Http Server running on http://127.0.1.1:3274
+Contracting companyC5 for Painting
+Contracting companyC5 for ElectricalSystem
+Contracting companyA for Plumbing
+Contracting companyD11 for WindowsDoors
+Contracting companyE for Roof
+Contracting companyE for Walls
+Contracting companyE for Floors
+Contracting companyB for SitePreparation
+[Velluscinum] Stamp Transaction... 82385c7c457c8e8b1e33ba905f6e1f4754efbcc576349389b097e23e39ea4898 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 44854324b2e6379d6344ecb030b63c2e5d3ac9cec4298eb850e0712e96311905 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 47b9c92674990078d1f9342ddd61b0375af32660f172029c2fe9c1c370efc6ed [pushed][successfully]
+[Velluscinum] Stamp Transaction... 7b0bac53af9d9c09d2e1b11ae94343c70d2d22170dc69cf8e3aa8f579efb2666 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 97d94635bd5188f885cecb71bac46d00970500066dec636aff13af1f0e50f126 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 48e41b7b4a82af0a876e3f369b04a04bcedc95486489913076bd9b6466f86206 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 5925a53aa11c6bdd5205c62752bceda0cb4855039d3f9a3d7eb26aa3848b1748 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 110726b6719a071f3ea816841cfa43801c2b2311993ff2d1c9a96fa121cc2927 [pushed][successfully]
+[companyB] I am obliged to commit to prepare_site on bhsch... doing so
+[companyC5] I am obliged to commit to install_electrical_system on bhsch... doing so
+[companyD11] I am obliged to commit to fit_windows on bhsch... doing so
+[companyD11] I am obliged to commit to fit_doors on bhsch... doing so
+[companyE] I am obliged to commit to lay_floors on bhsch... doing so
+[companyE] I am obliged to commit to build_walls on bhsch... doing so
+[companyE] I am obliged to commit to build_roof on bhsch... doing so
+[companyC5] I am obliged to commit to paint_house on bhsch... doing so
+[companyA] I am obliged to commit to install_plumbing on bhsch... doing so
+[Velluscinum] Transfer Token... a4ea6bcd3e2516789d2e4b31fc53a904592ad528766598a3bf6b266fa86a6e49 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 03549cc2fad80bcfc69ad5117248108a8323465cc58de7ecc4e8d0f441aed6f6 [pushed][successfully]
+[Velluscinum] Transfer Asset... 3e21beca26c0db3bb8c80c7cbe328c2ecdec2ade380cc300e13286c71f41ffc0 [pushed][successfully]
+[Velluscinum] Transfer Token... 24d2071a657c0750f67bf8649d95dfba60a161c67cb132917ec0cc19c9a94463 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 7275348f6c8f2f34695578f44e60f4ea154298e6ddab6aaeccf19a272a2496b9 [pushed][successfully]
+[Velluscinum] Transfer Asset... bfec0d5c10845525a6decdd5e378a856a034298b9b4febc92e4818773ae0fc05 [pushed][successfully]
+[Velluscinum] Transfer Token... 04b18aeea9cd7c567d307736c318981e128a1bfce6adf7a13c98764558152d39 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 5d39345789d4c845d5333cdfc078a74c5e99f766d2e91deebb79ac55bbbf205e [pushed][successfully]
+[Velluscinum] Transfer Asset... ceff7519f14ffb193f0288cbf64401706ec09886a562a343746d95a549aafe22 [pushed][successfully]
+[Velluscinum] Transfer Token... 2e5fbec543fe34ace01e4a4ade1ff40d0ce2da6129f89f8010f031bfb68b06fb [pushed][successfully]
+[Velluscinum] Transfer Token... 14266bc3ac708a108f19d51578dcba67a8fb8f1f338c45ee61e4908cf0058a17 [pushed][successfully]
+[Velluscinum] Stamp Transaction... b2e70fa25c54bb14d7ce605c401822dc0dfe5cd018b56264a871bde47bff2adb [pushed][successfully]
+[Velluscinum] Transfer Asset... 35427bae4fc83f738359f4195cddb6a6406b2febc1dd0c3ae082fd523472ea6f [pushed][successfully]
+[Velluscinum] Stamp Transaction... d3e864aec7e49b314db99b50fa327b62cd62bffc650c890dcce6e85b321e1a49 [pushed][successfully]
+[Velluscinum] Transfer Asset... e8b2f025a82c2887f2315689a56eb523151e12f82a848063d944945c71256107 [pushed][successfully]
+[Velluscinum] Transfer Token... a224c13eddee481f7c72be071a674b66265feed5608217e96647a041402d5c63 [pushed][successfully]
+[Velluscinum] Transfer Token... c994fa9803e0b239016fec7191e6e08a9ea380e40fa4f4f5008346c725246cdf [pushed][successfully]
+[Velluscinum] Transfer Token... 6a1aa16f9c0283800e626f5032549d5c4f34eaaac6e2182b04a39faf716cf637 [pushed][successfully]
+[Velluscinum] Stamp Transaction... 146a262d71f06b7d3242343535078a44a7cced65388e79effee94d389345d0c1 [pushed][successfully]
+[Velluscinum] Transfer Asset... 09af04d32fb74ef96b2a12cd580762dd4f368fcffca152f146c1a5f7430c0bfd [pushed][successfully]
+[Velluscinum] Stamp Transaction... 4f5f0a9ba50cb9d8eeddb8beae56d802450dc5d29cec2464057da6dea0d13ddb [pushed][successfully]
+[Velluscinum] Stamp Transaction... 71153c7f220978219a56b0fb9e3b1ab15b6cff200339148307e2c1f77ab92afa [pushed][successfully]
+[Velluscinum] Transfer Asset... 06f46d200452587ab1639f4e2d35d9c62e93fc447365e63e3a1f0f93d1d7b4dd [pushed][successfully]
+[Velluscinum] Transfer Asset... c1fc2f93f1c3492e50b650dd5e1cc192af08590d23308b935786eefacd2fd1f5 [pushed][successfully]
