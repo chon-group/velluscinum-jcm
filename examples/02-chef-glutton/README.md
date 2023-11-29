@@ -195,14 +195,22 @@ jacamo chefBankGlutton/chefBankGlutton.jcm
 ![](.img/projectOutput.png)
 
 ### Checking
-#### 1 - Bank creating cryptocurrency
+<details>
+<summary>1 - Bank creating cryptocurrency</summary>
+
+#### Bank creating cryptocurrency
 The asset was registered with ID [20c558d1b41032b86c8d0b12edfcdc9c828c1723486a9721c35e40708ee1faaf](http://testchain.chon.group:9984/api/v1/assets/?search=20c558d1b41032b86c8d0b12edfcdc9c828c1723486a9721c35e40708ee1faaf) as below:
 ![](.img/chainCoin.png)
 
 The asset was included in Block [6453](http://testchain.chon.group:9984/api/v1/blocks/6453) as below:
 ![](.img/block6453.png)
 
-#### 2 - Glutton creating a bank lend agreement
+</details>
+
+<details>
+<summary>2 - Glutton creating a bank lend agreement</summary>
+
+#### Glutton creating a bank lend agreement
 The payment promise was registered with ID [99771d794f1ac0244945fb06168cad5052c43cc2b29d50cf4b1b0a2cbd3ce9b6](http://testchain.chon.group:9984/api/v1/assets/?search=99771d794f1ac0244945fb06168cad5052c43cc2b29d50cf4b1b0a2cbd3ce9b6) as below:
 ![](.img/accontAgreement.png)
 
@@ -211,27 +219,43 @@ The payment promise was included in Block [6455](http://testchain.chon.group:998
 
 The payment promise was transfered to agent bank in Block [6457](http://testchain.chon.group:9984/api/v1/blocks/6457) as below:
 ![](.img/block6457.png)
+</details>
 
-#### 3 - Agent bank [stamping](#stamp-transaction-definition) the payment promisse
+<details>
+<summary>3 - Agent bank stamping the payment promisse</summary>
+
+#### Agent bank [stamping](#stamp-transaction-definition) the payment promisse
 The payment promise was [stamped](#stamp-transaction-definition) by agent bank in Block [6459](http://testchain.chon.group:9984/api/v1/blocks/6459) as below:
 ![](.img/block6459.png)
 
 The agent bank transfer 10 units of _ChainCoin_ to glutton wallet in Block [6461](http://testchain.chon.group:9984/api/v1/blocks/6461) as below:
 ![](.img/block6461.png)
 
-#### 4 - Agent glutton transfering cryptocurrency to agent chef (order nr 1)
+</details>
+
+<details>
+<summary> 4 - Agent glutton transfering cryptocurrency to agent chef (order nr 1) </summary>
+
+#### Agent glutton transfering cryptocurrency to agent chef (order nr 1)
 The agent glutton transfer 5 units of _ChainCoin_ to chef wallet in Block [6463](http://testchain.chon.group:9984/api/v1/blocks/6463) as below:
 ![](.img/block6463.png)
 
 The agent chef [stamp](#stamp-transaction-definition) the transfer in Block [6465](http://testchain.chon.group:9984/api/v1/blocks/6465) as below:
 ![](.img/block6465.png)
 
-#### 5 - Agent glutton transfering cryptocurrency to agent chef (order nr 2)
+</details>
+
+<details>
+<summary> 5 - Agent glutton transfering cryptocurrency to agent chef (order nr 2) </summary>
+
+#### Agent glutton transfering cryptocurrency to agent chef (order nr 2)
 The agent glutton transfer 5 units of _ChainCoin_ to chef wallet in Block [6467](http://testchain.chon.group:9984/api/v1/blocks/6467) as below:
 ![](.img/block6467.png)
 
 The agent chef [stamp](#stamp-transaction-definition) the transfer in Block [6469](http://testchain.chon.group:9984/api/v1/blocks/6469) as below:
 ![](.img/block6469.png)
+
+</details>
 
 ### Balance
 Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of agents wallets.
