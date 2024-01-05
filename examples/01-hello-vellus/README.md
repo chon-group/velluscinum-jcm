@@ -62,15 +62,31 @@ jacamo helloVelluscinum/helloVelluscinum.jcm
 ![](.img/outputHelloVelluscinum.png)
 
 ### Checking
-The asset was registered with ID [30342056926bb8dc347a5de7cf0e9063f33d9469a2d7694f93ee095fe8c736b0](
-http://testchain.chon.group:9984/api/v1/assets/?search=30342056926bb8dc347a5de7cf0e9063f33d9469a2d7694f93ee095fe8c736b0) as below:
-![](.img/asset.png)
+<details>
+<summary>The asset was registered with ID 30342056926bb8dc347a5de7cf0e9063f33d9469a2d7694f93ee095fe8c736b0  </summary>
 
-The asset was included in Block [6413](http://testchain.chon.group:9984/api/v1/blocks/6413) as below:
-![](.img/block_6413.png)
+[![](.img/asset.png)](
+http://testchain.chon.group:9984/api/v1/assets/?search=30342056926bb8dc347a5de7cf0e9063f33d9469a2d7694f93ee095fe8c736b0)
 
-The transfer was registered with ID [91271a5f15642cbf92468dd7885feaaae1fc3873546fe2fb6be2f9e054b53ea4](http://testchain.chon.group:9984/api/v1/transactions/91271a5f15642cbf92468dd7885feaaae1fc3873546fe2fb6be2f9e054b53ea4) as below:
-![](.img/transaction.png)
+</details>
 
-The transfer was included in Block [6415](http://testchain.chon.group:9984/api/v1/blocks/6415) as below:
-![](.img/block_6415.png)
+<details>
+<summary> The asset was included in Block 6413 </summary>
+
+[![](.img/block_6413.png)](http://testchain.chon.group:9984/api/v1/blocks/6413)
+
+</details>
+
+<details>
+<summary> The transfer was registered with ID 91271a5f15642cbf92468dd7885feaaae1fc3873546fe2fb6be2f9e054b53ea4 </summary>
+
+[![](.img/transaction.png)](http://testchain.chon.group:9984/api/v1/transactions/91271a5f15642cbf92468dd7885feaaae1fc3873546fe2fb6be2f9e054b53ea4)
+
+</details>
+
+<details>
+<summary> The transfer was included in Block 6415 </summary>
+
+[![](.img/block_6415.png)](http://testchain.chon.group:9984/api/v1/blocks/6415)
+
+</details>

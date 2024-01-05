@@ -6,43 +6,49 @@ This project presents a Multi-agent Systems (MAS) approach that can use digital 
 The Velluscinum JaCaMo Package extends the [jacamo-lang](https://github.com/jacamo-lang/jacamo) through integration with [BigchainDB](https://github.com/bigchaindb/bigchaindb), providing new internal actions to enable the use of digital assets to support the relationship between intelligent agents.
 The actions offered by the middleware are available directly to the dimension of the agents that populate the MAS. They bridge the [Multi-agent Oriented Programming (MAOP) paradigm](https://doi.org/10.1016/j.scico.2011.10.004) and the [BigchainDB communication driver](https://github.com/bigchaindb/java-bigchaindb-driver). In this way, intelligent agents can create or transfer digital assets, stamp transactions or manage their wallets on the DLT directly from their dimension.
 
+
 ![schema2](https://github.com/chon-group/velluscinum-jcm/assets/32855001/aac47021-2c88-439b-b6cc-bccd2d48a355)
 
-## The built-in internal actions provided by the middleware are described below:
+
+## The _Internal Actions_ provided by the middleware
 - velluscinum.buildWallet(w) - generates a digital wallet and returns the belief +w(P,Q);
 - velluscinum.deployNFT(S,P,Q,I,M,b) - registers an asset and returns the belief +b(A);
 - velluscinum.transferNFT(S,P,Q,A,R,M,b) - transfer an asset and returns +b(T);
 - velluscinum.deployToken(S,P,Q,I,V,b) - creates V units from an asset, returns +b(C);
 - velluscinum.transferToken(S,P,Q,C,R,V,b) - transfer V units of C and returns +b(T);
 - velluscinum.stampTransaction(S,P,Q,T) - stamps a transaction (T);
-- velluscinum.tokenBalance}(S,P,Q,C,q) - check the wallet Q and return +q(C,V).
+- velluscinum.tokenBalance(S,P,Q,C,q) - check the wallet Q and return +q(C,V).
 
 Where:
-- b is a belief that represents a result of an operation in DLT;
-- w is a belief that represents an agent's wallet;
-- q is a belief that represents the balance of C in the agent's wallet.
-- A is a literal that represents a divisible asset;
-- C is a literal that represents a indivisible asset;
-- P e Q are literals that represent the agent's key pair;
-- R is a literal that represents the public key of a recipient agent;
-- S is a literal that represents the address of a DLT node;
-- T is a literal that represents a transaction performed in the DTL;
-- V is a literal that represents the number of parts of a C;
-- I is a key-value array that represents the immutable data of an asset;
-- M is a key-value array representing asset or transaction metadata;
+- ___b___ is a belief that represents a result of an operation in DLT;
+- ___w___ is a belief that represents an agent's wallet;
+- ___q___ is a belief that represents the balance of C in the agent's wallet.
+- ___A___ is a literal that represents a indivisible asset;
+- ___C___ is a literal that represents a divisible asset;
+- ___P___ e Q are literals that represent the agent's key pair;
+- ___R___ is a literal that represents the public key of a recipient agent;
+- ___S___ is a literal that represents the address of a DLT node;
+- ___T___ is a literal that represents a transaction performed in the DTL;
+- ___V___ is a literal that represents the number of parts of a C;
+- ___I___ is a key-value array that represents the immutable data of an asset;
+- ___M___ is a key-value array representing asset or transaction metadata;
 
-## How to use
-Import the package in your .JCM project file
+### How to import?
+Import the package in your _.JCM_ project file
+
 ```
 mas yourJaCaMoProject {
     ...
     uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
+    ...
 }
 ```
-## Examples
+
+## EXAMPLES
 +   [Hello Vellus](examples/01-hello-vellus)
 +   [The Chef and the Glutton](examples/02-chef-glutton)
 +   [Building a House](examples/03-house-building)
+
 
 
 ## COPYRIGHT
@@ -52,6 +58,9 @@ mas yourJaCaMoProject {
 
 Mori Lazarin, N., Machado Coelho, I., Pantoja, C.E., Viterbo, J. (2023). Velluscinum: A Middleware for Using Digital Assets in Multi-agent Systems. In: Mathieu, P., Dignum, F., Novais, P., De la Prieta, F. (eds) Advances in Practical Applications of Agents, Multi-Agent Systems, and Cognitive Mimetics. The PAAMS Collection. PAAMS 2023. Lecture Notes in Computer Science(), vol 13955. Springer, Cham. DOI: [https://doi.org/10.1007/978-3-031-37616-0_17](https://www.researchgate.net/publication/372282299_Velluscinum_A_Middleware_for_Using_Digital_Assets_in_Multi-agent_Systems)
 
+### How to cite?
+<details>
+<summary> BibTeX Format </summary>
 
 ```
 @InProceedings{velluscinum,
@@ -73,3 +82,5 @@ pages="200--212",
 isbn="978-3-031-37616-0"
 }
 ```
+
+</details>
