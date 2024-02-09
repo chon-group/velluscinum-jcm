@@ -68,7 +68,7 @@ jacamo houseBuilding/house_building.jcm
 </details>
 </details>
 
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of companyA wallet.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of companyA wallet.
 ![](.img/companyA/balance.png)
 
 </details>
@@ -117,7 +117,7 @@ Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/d
 </details>
 </details>
 
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of companyB wallet.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of companyB wallet.
 ![](.img/companyB/balance.png)
 
 </details>
@@ -204,7 +204,7 @@ Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/d
 </details>
 </details>
 
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of companyC5 wallets.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of companyC5 wallets.
 ![](.img/companyC5/balance.png)
 
 </details>
@@ -253,7 +253,7 @@ Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/d
 </details>
 </details>
 
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of companyD11 wallet.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of companyD11 wallet.
 ![](.img/companyD11/balance.png)
 
 </details>
@@ -380,13 +380,13 @@ Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/d
 </details>
 
 
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of companyE wallet.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of companyE wallet.
 ![](.img/companyE/balance.png)
 
 </details>
 
 #### Giacomo Wallet
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of giacomo wallet.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of giacomo wallet.
 ![](.img/balance.png)
 
 ## Stamp Transaction definition

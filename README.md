@@ -39,7 +39,7 @@ Import the package in your _.JCM_ project file
 ```
 mas yourJaCaMoProject {
     ...
-    uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
+    uses package: velluscinum "com.github.chon-group:velluscinum-jcm:1.0"
     ...
 }
 ```

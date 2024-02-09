@@ -1,6 +1,5 @@
 /* Initial beliefs and rules */
-//bigchainDB("http://testchain.chon.group:9984/").
-bigchainDB("http://10.100.12.115:9984/").
+bigchainDB("http://testchain.chon.group:9984/").
 aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 
 /* Initial goals */
@@ -8,11 +7,11 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 
 /* Plans */
 +!start <-
-	.print("Creating a Wallet");
+
 	velluscinum.buildWallet(myWallet);
 	.wait(myWallet(PrivateKey,PublicKey));
 	
-	.print("Creating a NFT");
+
 	?bigchainDB(Server);
 	velluscinum.deployNFT(Server,
 			PrivateKey,PublicKey,
@@ -23,7 +22,6 @@ aliceKey("FNJPJdtuPQYsqHG6tuUjKjqv7SW84U4ipiyyLV2j6MEW").
 	.wait(myNFT(AssetID));
 	.print("NFT registered: ",Server,"api/v1/transactions/",AssetID);
 
-	.print("Tranfering the NFT");
 	?aliceKey(AliceKey);
 	velluscinum.transferNFT(Server,
 				PrivateKey,PublicKey,

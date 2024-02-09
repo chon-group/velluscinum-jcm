@@ -1,6 +1,6 @@
 #! /bin/bash
 bigchaindbNODE="http://testchain.chon.group:9984"
-VELLUSCINUM_CLI="java -jar houseBuilding/lib/velluscinum_0.9-rc.jar"
+VELLUSCINUM_CLI="java -jar houseBuilding/lib/velluscinum_24.2.9.jar"
 
 echo "Preparing cryptocurrency to execute the example"
 echo "Using $bigchaindbNODE as Node in BigchainDB Network"

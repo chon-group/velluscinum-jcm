@@ -11,7 +11,7 @@ Edit  the project file __helloVelluscinum/helloVelluscinum.jcm__
 ```
 mas helloVelluscinum {
     agent bob: sample_agent.asl
-    uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"    
+    uses package: velluscinum "com.github.chon-group:velluscinum-jcm:1.0"    
 }
 ```
 

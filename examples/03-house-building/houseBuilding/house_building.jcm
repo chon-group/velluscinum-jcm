@@ -18,5 +18,5 @@ mas house_building {
    }
    agent companyE
 
-   uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
+   uses package: velluscinum "com.github.chon-group:velluscinum-jcm:1.0"
 }

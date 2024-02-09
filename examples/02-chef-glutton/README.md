@@ -13,7 +13,7 @@ mas chefBankGlutton {
   agent bank
   agent chef
   agent glutton
-  uses package: velluscinum "com.github.chon-group:velluscinum-jcm:0.9-rc"
+  uses package: velluscinum "com.github.chon-group:velluscinum-jcm:1.0"
 }
 ```
 
@@ -259,7 +259,7 @@ The agent chef [stamp](#stamp-transaction-definition) the transfer in Block [646
 </details>
 
 ### Balance
-Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/0.9-rc/velluscinum.jar) we can verify the balance of agents wallets.
+Using the [Velluscinum-CLI](https://github.com/chon-group/velluscinum/releases/download/24.2.9/velluscinum.jar) we can verify the balance of agents wallets.
 
 - The agent bank has the glutton promisse asset and 190 chainCoins;
 - The agent glutton have anything in your wallet;
